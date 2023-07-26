@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "474159132785",
+    "project_id": "paymentalert-209e1",
+    "storage_bucket": "paymentalert-209e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474159132785:android:0b6b5dbd36969d0e302bd0",
+        "android_client_info": {
+          "package_name": "com.example.paymentalert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474159132785-gvd0l2ma6hacv1f1qlikttr10k124ig1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5wUp0R9HzfF1Nyw1uj1qmfqXYds2Bc8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474159132785-gvd0l2ma6hacv1f1qlikttr10k124ig1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
