@@ -18,14 +18,14 @@ class LogActivity : AppCompatActivity() {
         setContentView(R.layout.login_activity)
 
 
-        if (Build.VERSION.SDK_INT >= 21) {
+       /* if (Build.VERSION.SDK_INT >= 21) {
             val window = this.window
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
             window.statusBarColor = this.resources.getColor(R.color.fondo1)
 
 
-        }
+        }*/
         val editTextCorreo = findViewById<EditText>(R.id.editTextCorreo)
         val editTextPassword = findViewById<EditText>(R.id.editTextPassword)
         var buttonInicioSesion = findViewById<Button>(R.id.buttonIniciarSesion)
@@ -57,7 +57,7 @@ class LogActivity : AppCompatActivity() {
             .addOnCompleteListener{
                 if (it.isSuccessful) {
                     Log.d("TAG", "signInWithEmail:success")
-                    reload()
+                    reload(it.result?.user?.email?:"")
                 } else {
                     Log.w("TAG", "signInWithEmail:failure", it.exception)
                     Toast.makeText(
@@ -67,8 +67,11 @@ class LogActivity : AppCompatActivity() {
             }
     }
 
-    private fun reload() {
-        val intent = Intent(this, HomeActivity::class.java)
+
+    private fun reload(email: String) {
+        val intent = Intent(this, HomeActivity::class.java).apply {
+            putExtra("email", email)
+        }
         this.startActivity(intent)
     }
 

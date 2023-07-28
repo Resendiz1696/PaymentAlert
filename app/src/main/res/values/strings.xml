@@ -72,4 +72,10 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_agregar_tajeta">AgregarTajetaActivity</string>
+    <string name="leyenda_Ingreso_tarjeta">Ingresa datos de la tarjeta para recordate los pagos</string>
+    <string name="titulo_ingresa_tarjeta">Ingresa Datos de la Terjeta</string>
+    <string name="numero_de_la_tarjeta">Numero de la Tarjeta</string>
+    <string name="guardar">Guardar</string>
 </resources>

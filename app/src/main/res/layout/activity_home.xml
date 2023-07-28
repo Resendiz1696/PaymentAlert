@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
     android:background="@drawable/background"
-    android:orientation="vertical">
-
+    tools:context=".HomeActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/cardList"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
-        tools:listitem="@layout/card_item"/>
-</LinearLayout>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/card_item" />
+
+    <android.widget.Button
+        android:id="@+id/buttonAgregarTarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/backgrup_button"
+        android:fontFamily="@font/roboto"
+        android:text="Agragar Tarjeta"
+        android:textStyle="bold"
+
+        />
+
+
+    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fl_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/plus"
+        android:contentDescription="@string/todo" />-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
